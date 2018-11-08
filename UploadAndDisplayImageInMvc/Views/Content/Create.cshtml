@@ -37,7 +37,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.Image, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            <input type="file" name="ImageData" class="ImageData" onchange="fileCheck(this);" />
+            <input type="file" name="ImageData" id="ImageData" onchange="fileCheck(this);" />
             @Html.ValidationMessageFor(model => model.Image)
 
         </div>
